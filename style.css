@@ -1,0 +1,131 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+
+  /* added by student */
+  background: #151515;
+}
+
+.header {
+  /*Could be improved:
+  
+  It's not a good practice to set fixed height to blocks unnecessarily. Usually blocks' height should depend on its content and internal gaps.
+  However, there are some cases when we need a container to have a minimum height, mostly when it hsa a background image.
+
+  I would suggest using `min-height` instead of `height` here.
+  */
+  height: 660px;
+
+  /* added by student */
+  background-image: url("./images/cover.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.header__banner {
+  font-weight: 500;
+  letter-spacing: -0.64px;
+  font-size: 16px;
+  line-height: 15px;
+  color: #ffe247;
+  text-transform: uppercase;
+  margin: 20px auto 0;
+  max-width: 154px;
+}
+
+/* added by student */
+.header__title {
+  font-weight: 500;
+  letter-spacing: -5.6px;
+  font-size: 140px;
+  line-height: 132px;
+  color: #ffe247;
+  text-transform: uppercase;
+  max-width: 1400px;
+  margin: 0 0 20px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+
+  /* added by student */
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+/* all card styles added by student */
+.card {
+  width: 490px;
+  min-height: 440px;
+  background: #ffffff;
+}
+
+.card__image {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.card__content {
+  padding: 20px 20px 0;
+}
+
+.card__title {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: -0.16px;
+  color: #151515;
+  margin-bottom: 10px;
+}
+
+.card__text {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #151515;
+}
+
+/* all footer styles added by student */
+.footer {
+  padding: 20px 0 40px;
+}
+
+.footer__author {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #efefef;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*NEEDS CORRECTING: The brief has a value for `height` in the footer, it's necessary to add it.
+COULD BE IMPROVED: Just like in the header, I'd suggest using `min-height` here, to set the minimum height of the footer.
+*/
